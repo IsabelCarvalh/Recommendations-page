@@ -6,51 +6,28 @@ class MyCarousel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final List<Widget> containers = [
-      Container(
-          margin: const EdgeInsets.symmetric(
-              horizontal: 5.0), // Espaço entre os containers
-          color: const Color.fromARGB(255, 158, 54, 244),
-          height: 200,
-          child: GestureDetector(onTap: () {
-            Navigator.push(context,
-                MaterialPageRoute(builder: (context) => Telainformacoes()));
-          })),
-      Container(
-          margin: const EdgeInsets.symmetric(
-              horizontal: 5.0), // Espaço entre os containers
-          color: const Color.fromARGB(255, 238, 54, 244),
-          height: 200,
-          child: GestureDetector(onTap: () {
-            Navigator.push(context,
-                MaterialPageRoute(builder: (context) => Telainformacoes()));
-          })),
-      Container(
-          margin: const EdgeInsets.symmetric(
-              horizontal: 5.0), // Espaço entre os containers
-          color: const Color.fromARGB(255, 54, 73, 244),
-          height: 200,
-          child: GestureDetector(onTap: () {
-            Navigator.push(context,
-                MaterialPageRoute(builder: (context) => Telainformacoes()));
-          })),
-      Container(
-          margin: const EdgeInsets.symmetric(
-              horizontal: 5.0), // Espaço entre os containers
-          color: const Color.fromARGB(255, 54, 222, 244),
-          height: 200,
-          child: GestureDetector(onTap: () {
-            Navigator.push(context,
-                MaterialPageRoute(builder: (context) => Telainformacoes()));
-          })),
-      Container(
-          margin: const EdgeInsets.symmetric(
-              horizontal: 5.0), // Espaço entre os containers
-          color: const Color.fromARGB(255, 54, 244, 139),
-          height: 200,
-          child: GestureDetector(onTap: () {
-            Navigator.push(context,
-                MaterialPageRoute(builder: (context) => Telainformacoes()));
-          })),
+       Container(
+            margin: const EdgeInsets.symmetric(horizontal: 5.0), 
+            color: const Color.fromARGB(255, 158, 54, 244),
+            height: 200,
+            child: GestureDetector(
+              onTap: () async {
+                const url = 'https://www.estadao.com.br/';
+                
+                if (await canLaunch(url)) {
+                  await launch(url);
+                } else {
+                  throw 'Não foi possível abrir o link';
+                }
+              },
+              child: Center(
+                child: Text(
+                  '7 ideias para um final de semana divertido com os amigos!',
+                  style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
+              ),
+            ),
+          ),
     ];
 
     return Scaffold(
