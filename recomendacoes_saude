@@ -1,0 +1,253 @@
+import 'package:flutter/material.dart';
+import 'package:carousel_slider/carousel_slider.dart';
+import 'package:url_launcher/url_launcher.dart';
+
+class MyCarousel extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    final List<Widget> containers = [
+       Container(
+            margin: const EdgeInsets.symmetric(horizontal: 5.0), 
+            color: const Color.fromARGB(255, 158, 54, 244),
+            height: 200,
+            child: GestureDetector(
+              onTap: () async {
+                const url = 'https://www.unimed.coop.br/site/web/maranhaodosul/-/dicas-de-sa%C3%BAde-conhe%C3%A7a-5-h%C3%A1bitos-saud%C3%A1veis-para-adotar-na-rotina';
+                
+                if (await canLaunch(url)) {
+                  await launch(url);
+                } else {
+                  throw 'Não foi possível abrir o link';
+                }
+              },
+              child: Center(
+                child: Text(
+                  'Habitos saudáveis para adotar na rotina',
+                  style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
+              ),
+            ),
+          ),
+           Container(
+            margin: const EdgeInsets.symmetric(horizontal: 5.0), 
+            color: const Color.fromARGB(255, 219, 54, 244),
+            height: 200,
+            child: GestureDetector(
+              onTap: () async {
+                const url = 'https://vidasaudavel.einstein.br/alimentacao-equilibrada/';
+                
+                if (await canLaunch(url)) {
+                  await launch(url);
+                } else {
+                  throw 'Não foi possível abrir o link';
+                }
+              },
+              child: Center(
+                child: Text(
+                  'Alimentação equilibrada',
+                  style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
+              ),
+            ),
+          ),
+           Container(
+            margin: const EdgeInsets.symmetric(horizontal: 5.0), 
+            color: const Color.fromARGB(255, 244, 54, 158),
+            height: 200,
+            child: GestureDetector(
+              onTap: () async {
+                const url = 'https://www.tjdft.jus.br/informacoes/programas-projetos-e-acoes/pro-vida/dicas-de-saude/pilulas-de-saude/o-que-significa-ter-saude-1';
+                
+                if (await canLaunch(url)) {
+                  await launch(url);
+                } else {
+                  throw 'Não foi possível abrir o link';
+                }
+              },
+              child: Center(
+                child: Text(
+                  'O que é ter saúde',
+                  style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
+              ),
+            ),
+          ),
+           Container(
+            margin: const EdgeInsets.symmetric(horizontal: 5.0), 
+            color: const Color.fromARGB(255, 244, 54, 79),
+            height: 200,
+            child: GestureDetector(
+              onTap: () async {
+                const url = 'https://mulher.jundiai.sp.gov.br/cuidados-com-a-mulher/';
+                
+                if (await canLaunch(url)) {
+                  await launch(url);
+                } else {
+                  throw 'Não foi possível abrir o link';
+                }
+              },
+              child: Center(
+                child: Text(
+                  'Cuidados com a mulher',
+                  style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
+              ),
+            ),
+          ),
+           Container(
+            margin: const EdgeInsets.symmetric(horizontal: 5.0), 
+            color: const Color.fromARGB(255, 82, 54, 244),
+            height: 200,
+            child: GestureDetector(
+              onTap: () async {
+                const url = 'https://www.pontotel.com.br/saude-fisica/';
+                
+                if (await canLaunch(url)) {
+                  await launch(url);
+                } else {
+                  throw 'Não foi possível abrir o link';
+                }
+              },
+              child: Center(
+                child: Text(
+                  'Como incentivar a saúde física na sua empresa',
+                  style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
+              ),
+            ),
+          ),
+           Container(
+            margin: const EdgeInsets.symmetric(horizontal: 5.0), 
+            color: const Color.fromARGB(255, 54, 133, 244),
+            height: 200,
+            child: GestureDetector(
+              onTap: () async {
+                const url = 'https://priscilapisoligeriatra.com.br/saude-mental-do-idoso-dicas/';
+                
+                if (await canLaunch(url)) {
+                  await launch(url);
+                } else {
+                  throw 'Não foi possível abrir o link';
+                }
+              },
+              child: Center(
+                child: Text(
+                  'Saúde mental do idoso',
+                  style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
+              ),
+            ),
+          ),
+           Container(
+            margin: const EdgeInsets.symmetric(horizontal: 5.0), 
+            color: const Color.fromARGB(255, 54, 222, 244),
+            height: 200,
+            child: GestureDetector(
+              onTap: () async {
+                const url = 'https://sciath.com.br/autocuidado-e-longevidade/';
+                
+                if (await canLaunch(url)) {
+                  await launch(url);
+                } else {
+                  throw 'Não foi possível abrir o link';
+                }
+              },
+              child: Center(
+                child: Text(
+                  'Autocuidado e longividade',
+                  style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
+              ),
+            ),
+          ),
+           Container(
+            margin: const EdgeInsets.symmetric(horizontal: 5.0), 
+            color: const Color.fromARGB(255, 54, 244, 203),
+            height: 200,
+            child: GestureDetector(
+              onTap: () async {
+                const url = 'https://uromed.com.br/artigos/cas-valiosas-para-saber-como-cuidar-da-saude-sexual/';
+                
+                if (await canLaunch(url)) {
+                  await launch(url);
+                } else {
+                  throw 'Não foi possível abrir o link';
+                }
+              },
+              child: Center(
+                child: Text(
+                  'Cuidados com a saúde sexual',
+                  style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
+              ),
+            ),
+          ),
+           Container(
+            margin: const EdgeInsets.symmetric(horizontal: 5.0), 
+            color: const Color.fromARGB(255, 54, 244, 120),
+            height: 200,
+            child: GestureDetector(
+              onTap: () async {
+                const url = 'https://www.protex-soap.com.br/skin-care/skin-health';
+                
+                if (await canLaunch(url)) {
+                  await launch(url);
+                } else {
+                  throw 'Não foi possível abrir o link';
+                }
+              },
+              child: Center(
+                child: Text(
+                  'Saúde da pele',
+                  style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
+              ),
+            ),
+          ),
+           Container(
+            margin: const EdgeInsets.symmetric(horizontal: 5.0), 
+            color: const Color.fromARGB(255, 54, 244, 76),
+            height: 200,
+            child: GestureDetector(
+              onTap: () async {
+                const url = 'https://sngodontologia.com.br/cuidados-com-a-saude-bucal/';
+                
+                if (await canLaunch(url)) {
+                  await launch(url);
+                } else {
+                  throw 'Não foi possível abrir o link';
+                }
+              },
+              child: Center(
+                child: Text(
+                  'Saúde bucal',
+                  style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
+              ),
+            ),
+          ),
+
+    ];
+
+    return Scaffold(
+      appBar: AppBar(),
+      body: Center(
+        child: CarouselSlider(
+          options: CarouselOptions(
+            height: 500.0,
+          ), //altura dos containers
+          items: containers.map((container) {
+            return Builder(
+              builder: (BuildContext context) {
+                return Container(
+                  width: 700, //largaura dos containers
+                  child: container,
+                );
+              },
+            );
+          }).toList(),
+        ),
+      ),
+    );
+  }
+}
