@@ -1,0 +1,319 @@
+import 'package:flutter/material.dart';
+import 'package:carousel_slider/carousel_slider.dart';
+import 'package:url_launcher/url_launcher.dart';
+
+class MyCarousel extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    final List<Widget> containers = [
+       Container(
+            margin: const EdgeInsets.symmetric(horizontal: 5.0), 
+            color: const Color.fromARGB(255, 158, 54, 244),
+            height: 200,
+            child: GestureDetector(
+              onTap: () async {
+                const url = 'https://www.unifoa.edu.br/dicas-de-estudo-para-aprender-melhor-e-rapido/';
+                
+                if (await canLaunch(url)) {
+                  await launch(url);
+                } else {
+                  throw 'Não foi possível abrir o link';
+                }
+              },
+              child: Center(
+                child: Text(
+                  'Como aprender melhor e mais rápido',
+                  style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
+              ),
+            ),
+          ),
+           Container(
+            margin: const EdgeInsets.symmetric(horizontal: 5.0), 
+            color: const Color.fromARGB(255, 219, 54, 244),
+            height: 200,
+            child: GestureDetector(
+              onTap: () async {
+                const url = 'https://www.uniacademia.edu.br/blog/estudar-em-casa';
+                
+                if (await canLaunch(url)) {
+                  await launch(url);
+                } else {
+                  throw 'Não foi possível abrir o link';
+                }
+              },
+              child: Center(
+                child: Text(
+                  'Como estudar em casa de forma mais produtiva',
+                  style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
+              ),
+            ),
+          ),
+           Container(
+            margin: const EdgeInsets.symmetric(horizontal: 5.0), 
+            color: const Color.fromARGB(255, 244, 54, 158),
+            height: 200,
+            child: GestureDetector(
+              onTap: () async {
+                const url = 'https://sanarmed.com/12-dicas-procrastinacao/';
+                
+                if (await canLaunch(url)) {
+                  await launch(url);
+                } else {
+                  throw 'Não foi possível abrir o link';
+                }
+              },
+              child: Center(
+                child: Text(
+                  'Como acabar com a procrastinação nos estudos',
+                  style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
+              ),
+            ),
+          ),
+           Container(
+            margin: const EdgeInsets.symmetric(horizontal: 5.0), 
+            color: const Color.fromARGB(255, 244, 54, 79),
+            height: 200,
+            child: GestureDetector(
+              onTap: () async {
+                const url = 'https://brasilescola.uol.com.br/dicas-de-estudo/dez-dicas-para-se-preparar-para-vestibular-ou-enem.htm';
+                
+                if (await canLaunch(url)) {
+                  await launch(url);
+                } else {
+                  throw 'Não foi possível abrir o link';
+                }
+              },
+              child: Center(
+                child: Text(
+                  'Como se preparar para o vestibular',
+                  style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
+              ),
+            ),
+          ),
+           Container(
+            margin: const EdgeInsets.symmetric(horizontal: 5.0), 
+            color: const Color.fromARGB(255, 82, 54, 244),
+            height: 200,
+            child: GestureDetector(
+              onTap: () async {
+                const url = 'https://blog.estudesemfronteiras.com/10-melhores-metodos-de-estudo-aprenda-a-usar-cada-um/';
+                
+                if (await canLaunch(url)) {
+                  await launch(url);
+                } else {
+                  throw 'Não foi possível abrir o link';
+                }
+              },
+              child: Center(
+                child: Text(
+                  'Os melhores métodos de estudos',
+                  style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
+              ),
+            ),
+          ),
+           Container(
+            margin: const EdgeInsets.symmetric(horizontal: 5.0), 
+            color: const Color.fromARGB(255, 54, 133, 244),
+            height: 200,
+            child: GestureDetector(
+              onTap: () async {
+                const url = 'https://priscilapisoligeriatra.com.br/saude-mental-do-idoso-dicas/';
+                
+                if (await canLaunch(url)) {
+                  await launch(url);
+                } else {
+                  throw 'Não foi possível abrir o link';
+                }
+              },
+              child: Center(
+                child: Text(
+                  'Saúde mental do idoso',
+                  style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
+              ),
+            ),
+          ),
+           Container(
+            margin: const EdgeInsets.symmetric(horizontal: 5.0), 
+            color: const Color.fromARGB(255, 54, 222, 244),
+            height: 200,
+            child: GestureDetector(
+              onTap: () async {
+                const url = 'https://blog.stoodi.com.br/blog/dicas-de-estudo/como-comecar-o-meu-estudo-do-zero/';
+                
+                if (await canLaunch(url)) {
+                  await launch(url);
+                } else {
+                  throw 'Não foi possível abrir o link';
+                }
+              },
+              child: Center(
+                child: Text(
+                  'Como começar a estudar do zero',
+                  style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
+              ),
+            ),
+          ),
+           Container(
+            margin: const EdgeInsets.symmetric(horizontal: 5.0), 
+            color: const Color.fromARGB(255, 54, 244, 203),
+            height: 200,
+            child: GestureDetector(
+              onTap: () async {
+                const url = 'https://www.univates.br/blog/estudos-e-saude-mental-como-equilibrar/';
+                
+                if (await canLaunch(url)) {
+                  await launch(url);
+                } else {
+                  throw 'Não foi possível abrir o link';
+                }
+              },
+              child: Center(
+                child: Text(
+                  'Estudos e saúde mental',
+                  style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
+              ),
+            ),
+          ),
+           Container(
+            margin: const EdgeInsets.symmetric(horizontal: 5.0), 
+            color: const Color.fromARGB(255, 54, 244, 120),
+            height: 200,
+            child: GestureDetector(
+              onTap: () async {
+                const url = 'superior - https://noticias.unisanta.br/blog-unisanta/saude-mental-e-os-estudos-universidade';
+                
+                if (await canLaunch(url)) {
+                  await launch(url);
+                } else {
+                  throw 'Não foi possível abrir o link';
+                }
+              },
+              child: Center(
+                child: Text(
+                  'Saúde mental durante o ensino superior',
+                  style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
+              ),
+            ),
+          ),
+           Container(
+            margin: const EdgeInsets.symmetric(horizontal: 5.0), 
+            color: const Color.fromARGB(255, 54, 244, 76),
+            height: 200,
+            child: GestureDetector(
+              onTap: () async {
+                const url = 'https://www.administradores.com.br/artigos/planejamento-de-trabalhos-academicos';
+                
+                if (await canLaunch(url)) {
+                  await launch(url);
+                } else {
+                  throw 'Não foi possível abrir o link';
+                }
+              },
+              child: Center(
+                child: Text(
+                  'Planejamento de trabalhos acadêmicos',
+                  style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
+              ),
+            ),
+          ),
+          Container(
+            margin: const EdgeInsets.symmetric(horizontal: 5.0), 
+            color: const Color.fromARGB(255, 54, 244, 76),
+            height: 200,
+            child: GestureDetector(
+              onTap: () async {
+                const url = 'https://g1.globo.com/pr/parana/especial-publicitario/uniopet/opet-inovacao-em-rede/noticia/2023/06/23/nunca-e-tarde-por-que-voltar-a-estudar-depois-dos-40-anos.ghtml';
+                
+                if (await canLaunch(url)) {
+                  await launch(url);
+                } else {
+                  throw 'Não foi possível abrir o link';
+                }
+              },
+              child: Center(
+                child: Text(
+                  'Nunca é tarde para voltar a estudar ',
+                  style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
+              ),
+            ),
+          ),
+          Container(
+            margin: const EdgeInsets.symmetric(horizontal: 5.0), 
+            color: const Color.fromARGB(255, 54, 244, 76),
+            height: 200,
+            child: GestureDetector(
+              onTap: () async {
+                const url = 'https://www.ucam-campos.br/projetos/blog/descubra-os-beneficios-que-a-leitura-traz-para-sua-vida/';
+                
+                if (await canLaunch(url)) {
+                  await launch(url);
+                } else {
+                  throw 'Não foi possível abrir o link';
+                }
+              },
+              child: Center(
+                child: Text(
+                  'Benefícios da leitura',
+                  style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
+              ),
+            ),
+          ),
+           Container(
+            margin: const EdgeInsets.symmetric(horizontal: 5.0), 
+            color: const Color.fromARGB(255, 54, 244, 76),
+            height: 200,
+            child: GestureDetector(
+              onTap: () async {
+                const url = 'https://www.crescersempre.org.br/habito-da-leitura/';
+                
+                if (await canLaunch(url)) {
+                  await launch(url);
+                } else {
+                  throw 'Não foi possível abrir o link';
+                }
+              },
+              child: Center(
+                child: Text(
+                  'Como criar o habito da leitura',
+                  style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
+              ),
+            ),
+          ),
+
+    ];
+
+    return Scaffold(
+      appBar: AppBar(),
+      body: Center(
+        child: CarouselSlider(
+          options: CarouselOptions(
+            height: 500.0,
+          ), //altura dos containers
+          items: containers.map((container) {
+            return Builder(
+              builder: (BuildContext context) {
+                return Container(
+                  width: 700, //largaura dos containers
+                  child: container,
+                );
+              },
+            );
+          }).toList(),
+        ),
+      ),
+    );
+  }
+}
