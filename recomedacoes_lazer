@@ -1,0 +1,297 @@
+import 'package:flutter/material.dart';
+import 'package:carousel_slider/carousel_slider.dart';
+import 'package:url_launcher/url_launcher.dart';
+
+class MyCarousel extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    final List<Widget> containers = [
+       Container(
+            margin: const EdgeInsets.symmetric(horizontal: 5.0), 
+            color: const Color.fromARGB(255, 158, 54, 244),
+            height: 200,
+            child: GestureDetector(
+              onTap: () async {
+                const url = 'http://bit.ly/3ZyNGvA';
+                
+                if (await canLaunch(url)) {
+                  await launch(url);
+                } else {
+                  throw 'Não foi possível abrir o link';
+                }
+              },
+              child: Center(
+                child: Text(
+                  'Ideias de hobbies para curtir no tempo livre',
+                  style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
+              ),
+            ),
+          ),
+           Container(
+            margin: const EdgeInsets.symmetric(horizontal: 5.0), 
+            color: const Color.fromARGB(255, 219, 54, 244),
+            height: 200,
+            child: GestureDetector(
+              onTap: () async {
+                const url = 'https://bit.ly/4ii9we6';
+                
+                if (await canLaunch(url)) {
+                  await launch(url);
+                } else {
+                  throw 'Não foi possível abrir o link';
+                }
+              },
+              child: Center(
+                child: Text(
+                  'Lazer sem sair de casa',
+                  style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
+              ),
+            ),
+          ),
+           Container(
+            margin: const EdgeInsets.symmetric(horizontal: 5.0), 
+            color: const Color.fromARGB(255, 244, 54, 158),
+            height: 200,
+            child: GestureDetector(
+              onTap: () async {
+                const url = 'https://bit.ly/3OI1dus';
+                
+                if (await canLaunch(url)) {
+                  await launch(url);
+                } else {
+                  throw 'Não foi possível abrir o link';
+                }
+              },
+              child: Center(
+                child: Text(
+                  'Ideias de lazer que custam pouco dinheiro',
+                  style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
+              ),
+            ),
+          ),
+           Container(
+            margin: const EdgeInsets.symmetric(horizontal: 5.0), 
+            color: const Color.fromARGB(255, 244, 54, 79),
+            height: 200,
+            child: GestureDetector(
+              onTap: () async {
+                const url = 'https://bit.ly/4igFIi6';
+                
+                if (await canLaunch(url)) {
+                  await launch(url);
+                } else {
+                  throw 'Não foi possível abrir o link';
+                }
+              },
+              child: Center(
+                child: Text(
+                  'Lazer para idosos',
+                  style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
+              ),
+            ),
+          ),
+           Container(
+            margin: const EdgeInsets.symmetric(horizontal: 5.0), 
+            color: const Color.fromARGB(255, 82, 54, 244),
+            height: 200,
+            child: GestureDetector(
+              onTap: () async {
+                const url = 'https://bit.ly/3VmUg5M';
+                
+                if (await canLaunch(url)) {
+                  await launch(url);
+                } else {
+                  throw 'Não foi possível abrir o link';
+                }
+              },
+              child: Center(
+                child: Text(
+                  'A impotância do lazer para a saúde',
+                  style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
+              ),
+            ),
+          ),
+           Container(
+            margin: const EdgeInsets.symmetric(horizontal: 5.0), 
+            color: const Color.fromARGB(255, 54, 133, 244),
+            height: 200,
+            child: GestureDetector(
+              onTap: () async {
+                const url = 'https://bit.ly/3OYFFKB';
+                
+                if (await canLaunch(url)) {
+                  await launch(url);
+                } else {
+                  throw 'Não foi possível abrir o link';
+                }
+              },
+              child: Center(
+                child: Text(
+                  'Dicas de lazer dentro de casa',
+                  style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
+              ),
+            ),
+          ),
+           Container(
+            margin: const EdgeInsets.symmetric(horizontal: 5.0), 
+            color: const Color.fromARGB(255, 54, 222, 244),
+            height: 200,
+            child: GestureDetector(
+              onTap: () async {
+                const url = 'https://airflix.com.br/dicas-de-lazer-em-familia-dentro-de-casa/';
+                
+                if (await canLaunch(url)) {
+                  await launch(url);
+                } else {
+                  throw 'Não foi possível abrir o link';
+                }
+              },
+              child: Center(
+                child: Text(
+                  'Lazer para as crianças durante as férias',
+                  style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
+              ),
+            ),
+          ),
+           Container(
+            margin: const EdgeInsets.symmetric(horizontal: 5.0), 
+            color: const Color.fromARGB(255, 54, 244, 203),
+            height: 200,
+            child: GestureDetector(
+              onTap: () async {
+                const url = 'https://bit.ly/3ZAuiOM';
+                
+                if (await canLaunch(url)) {
+                  await launch(url);
+                } else {
+                  throw 'Não foi possível abrir o link';
+                }
+              },
+              child: Center(
+                child: Text(
+                  'Impotância do lazer para a rotina de estudos',
+                  style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
+              ),
+            ),
+          ),
+           Container(
+            margin: const EdgeInsets.symmetric(horizontal: 5.0), 
+            color: const Color.fromARGB(255, 54, 244, 120),
+            height: 200,
+            child: GestureDetector(
+              onTap: () async {
+                const url = 'https://bit.ly/4g2vjFd';
+                
+                if (await canLaunch(url)) {
+                  await launch(url);
+                } else {
+                  throw 'Não foi possível abrir o link';
+                }
+              },
+              child: Center(
+                child: Text(
+                  'Lazer em espaços pequenas',
+                  style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
+              ),
+            ),
+          ),
+           Container(
+            margin: const EdgeInsets.symmetric(horizontal: 5.0), 
+            color: const Color.fromARGB(255, 54, 244, 76),
+            height: 200,
+            child: GestureDetector(
+              onTap: () async {
+                const url = 'https://bit.ly/4fXpKYv';
+                
+                if (await canLaunch(url)) {
+                  await launch(url);
+                } else {
+                  throw 'Não foi possível abrir o link';
+                }
+              },
+              child: Center(
+                child: Text(
+                  'Lazer também ajuda a passar no vestibular',
+                  style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
+              ),
+            ),
+          ),
+           Container(
+            margin: const EdgeInsets.symmetric(horizontal: 5.0), 
+            color: const Color.fromARGB(255, 143, 244, 54),
+            height: 200,
+            child: GestureDetector(
+              onTap: () async {
+                const url = 'https://blog.allya.com.br/lazer/';
+                
+                if (await canLaunch(url)) {
+                  await launch(url);
+                } else {
+                  throw 'Não foi possível abrir o link';
+                }
+              },
+              child: Center(
+                child: Text(
+                  'Lazer para os colaboradores da sua empresa',
+                  style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
+              ),
+            ),
+          ),
+           Container(
+            margin: const EdgeInsets.symmetric(horizontal: 5.0), 
+            color: const Color.fromARGB(255, 244, 244, 54),
+            height: 200,
+            child: GestureDetector(
+              onTap: () async {
+                const url = 'https://bit.ly/41czslq';
+                
+                if (await canLaunch(url)) {
+                  await launch(url);
+                } else {
+                  throw 'Não foi possível abrir o link';
+                }
+              },
+              child: Center(
+                child: Text(
+                  'Lazer para mamães e bebês',
+                  style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
+              ),
+            ),
+          ),
+
+    ];
+
+    return Scaffold(
+      appBar: AppBar(),
+      body: Center(
+        child: CarouselSlider(
+          options: CarouselOptions(
+            height: 500.0,
+          ), //altura dos containers
+          items: containers.map((container) {
+            return Builder(
+              builder: (BuildContext context) {
+                return Container(
+                  width: 700, //largaura dos containers
+                  child: container,
+                );
+              },
+            );
+          }).toList(),
+        ),
+      ),
+    );
+  }
+}
