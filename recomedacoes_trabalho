@@ -1,0 +1,253 @@
+import 'package:flutter/material.dart';
+import 'package:carousel_slider/carousel_slider.dart';
+import 'package:url_launcher/url_launcher.dart';
+
+class MyCarousel extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    final List<Widget> containers = [
+       Container(
+            margin: const EdgeInsets.symmetric(horizontal: 5.0), 
+            color: const Color.fromARGB(255, 158, 54, 244),
+            height: 200,
+            child: GestureDetector(
+              onTap: () async {
+                const url = 'https://www.knowsolution.com.br/6-dicas-para-melhorar-sua-qualidade-de-vida-no-trabalho/';
+                
+                if (await canLaunch(url)) {
+                  await launch(url);
+                } else {
+                  throw 'Não foi possível abrir o link';
+                }
+              },
+              child: Center(
+                child: Text(
+                  'Qualidade de vida no trabalho ',
+                  style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
+              ),
+            ),
+          ),
+           Container(
+            margin: const EdgeInsets.symmetric(horizontal: 5.0), 
+            color: const Color.fromARGB(255, 158, 54, 244),
+            height: 200,
+            child: GestureDetector(
+              onTap: () async {
+                const url = 'https://slik.com.br/como-ser-mais-produtivo-no-trabalho-dicas-e-recomendacoes/';
+                
+                if (await canLaunch(url)) {
+                  await launch(url);
+                } else {
+                  throw 'Não foi possível abrir o link';
+                }
+              },
+              child: Center(
+                child: Text(
+                  'Produtividade no trabalho',
+                  style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
+              ),
+            ),
+          ),
+           Container(
+            margin: const EdgeInsets.symmetric(horizontal: 5.0), 
+            color: const Color.fromARGB(255, 158, 54, 244),
+            height: 200,
+            child: GestureDetector(
+              onTap: () async {
+                const url = 'https://sebrae.com.br/sites/PortalSebrae/ufs/am/artigos/dicas-para-trabalhar-no-home-office,003e9ca62ef97810VgnVCM1000001b00320aRCRD';
+                
+                if (await canLaunch(url)) {
+                  await launch(url);
+                } else {
+                  throw 'Não foi possível abrir o link';
+                }
+              },
+              child: Center(
+                child: Text(
+                  'Dicas para trabalhar no home office',
+                  style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
+              ),
+            ),
+          ),
+           Container(
+            margin: const EdgeInsets.symmetric(horizontal: 5.0), 
+            color: const Color.fromARGB(255, 158, 54, 244),
+            height: 200,
+            child: GestureDetector(
+              onTap: () async {
+                const url = 'https://www.centi.com.br/portal/2016/08/10-dicas-para-um-bom-trabalho-em-equipe/';
+                
+                if (await canLaunch(url)) {
+                  await launch(url);
+                } else {
+                  throw 'Não foi possível abrir o link';
+                }
+              },
+              child: Center(
+                child: Text(
+                  'Como ter um bom trabalho em equipe',
+                  style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
+              ),
+            ),
+          ),
+           Container(
+            margin: const EdgeInsets.symmetric(horizontal: 5.0), 
+            color: const Color.fromARGB(255, 158, 54, 244),
+            height: 200,
+            child: GestureDetector(
+              onTap: () async {
+                const url = 'https://blog.portalpos.com.br/dicas-de-como-se-comportar-no-trabalho/';
+                
+                if (await canLaunch(url)) {
+                  await launch(url);
+                } else {
+                  throw 'Não foi possível abrir o link';
+                }
+              },
+              child: Center(
+                child: Text(
+                  'Como se comportar no trabalho',
+                  style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
+              ),
+            ),
+          ),
+           Container(
+            margin: const EdgeInsets.symmetric(horizontal: 5.0), 
+            color: const Color.fromARGB(255, 158, 54, 244),
+            height: 200,
+            child: GestureDetector(
+              onTap: () async {
+                const url = 'https://profissoes.vagas.com.br/8-dicas-para-comecar-trabalho-com-pe-direito/';
+                
+                if (await canLaunch(url)) {
+                  await launch(url);
+                } else {
+                  throw 'Não foi possível abrir o link';
+                }
+              },
+              child: Center(
+                child: Text(
+                  'Como começar bem no novo trabalho',
+                  style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
+              ),
+            ),
+          ),
+           Container(
+            margin: const EdgeInsets.symmetric(horizontal: 5.0), 
+            color: const Color.fromARGB(255, 158, 54, 244),
+            height: 200,
+            child: GestureDetector(
+              onTap: () async {
+                const url = 'https://drummond.com.br/10-dicas-para-se-preparar-para-o-mercado-de-trabalho/';
+                
+                if (await canLaunch(url)) {
+                  await launch(url);
+                } else {
+                  throw 'Não foi possível abrir o link';
+                }
+              },
+              child: Center(
+                child: Text(
+                  'Dicas para se preparar para o mercado de trabalho',
+                  style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
+              ),
+            ),
+          ),
+           Container(
+            margin: const EdgeInsets.symmetric(horizontal: 5.0), 
+            color: const Color.fromARGB(255, 158, 54, 244),
+            height: 200,
+            child: GestureDetector(
+              onTap: () async {
+                const url = 'https://descomplica.com.br/blog/convivencia-no-trabalho/';
+                
+                if (await canLaunch(url)) {
+                  await launch(url);
+                } else {
+                  throw 'Não foi possível abrir o link';
+                }
+              },
+              child: Center(
+                child: Text(
+                  'Boa convivência no trabalho',
+                  style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
+              ),
+            ),
+          ),
+           Container(
+            margin: const EdgeInsets.symmetric(horizontal: 5.0), 
+            color: const Color.fromARGB(255, 158, 54, 244),
+            height: 200,
+            child: GestureDetector(
+              onTap: () async {
+                const url = 'https://www.robertwalters.com.br/insights/conselhos-de-carreira/blog/dicas-para-impressionar-novo-trabalho.html';
+                
+                if (await canLaunch(url)) {
+                  await launch(url);
+                } else {
+                  throw 'Não foi possível abrir o link';
+                }
+              },
+              child: Center(
+                child: Text(
+                  'Como impressionar no novo trabalho',
+                  style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
+              ),
+            ),
+          ),
+           Container(
+            margin: const EdgeInsets.symmetric(horizontal: 5.0), 
+            color: const Color.fromARGB(255, 158, 54, 244),
+            height: 200,
+            child: GestureDetector(
+              onTap: () async {
+                const url = 'https://www.agendor.com.br/blog/comunicacao-no-ambiente-de-trabalho/';
+                
+                if (await canLaunch(url)) {
+                  await launch(url);
+                } else {
+                  throw 'Não foi possível abrir o link';
+                }
+              },
+              child: Center(
+                child: Text(
+                  'Como melhorar a comunicação no ambiente de trabalho',
+                  style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
+              ),
+            ),
+          ),
+    ];
+
+    return Scaffold(
+      appBar: AppBar(),
+      body: Center(
+        child: CarouselSlider(
+          options: CarouselOptions(
+            height: 500.0,
+          ), //altura dos containers
+          items: containers.map((container) {
+            return Builder(
+              builder: (BuildContext context) {
+                return Container(
+                  width: 700, //largaura dos containers
+                  child: container,
+                );
+              },
+            );
+          }).toList(),
+        ),
+      ),
+    );
+  }
+}
+
